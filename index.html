@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>口罩地圖</title>
+    <!-- 載入leafletjs連結 -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <!-- markers -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css"></link>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"></link>
+     <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- css reset -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- 自定義style -->
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="date">
+                <p class="nowyear"></p>
+                <h1></h1>
+                <p class="remind">如今日購買，下次最快可購買日為<em></em></p>
+            </div>
+            <div class="idarea">
+                <h2>請設定身分證尾碼</h2>
+                <div class="id" id="idBtn">
+                    <input type="button" value="1">
+                    <input type="button" value="2">
+                    <input type="button" value="3">
+                    <input type="button" value="4">
+                    <input type="button" value="5">
+                    <input type="button" value="6">
+                    <input type="button" value="7">
+                    <input type="button" value="8">
+                    <input type="button" value="9">
+                    <input type="button" value="0">
+                </div>
+                <div class="idBuy">
+                    <!-- 口罩提示是否能購買 -->
+                </div>
+             
+            </div>
+            
+            <div class="announcement">
+                <p>民眾持本人「健保卡」，每人限購2片，7天內不可重複購買。</p>
+                <p>可委託親友代為購買，一人限代持一張健保卡。</p>
+                <p>兒童口罩僅限12歲以下兒童健保卡購買</p>
+                <p class="connect"><a href="#">健保署公告連結</a></p>
+            </div>
+        </div>
+        
+        <div class="menu active" id="menu">
+        <!-- 選單 sidebar -->
+            <a class="c-sideButton" id="btnId" href="#"></a>
+            
+            <form action="#" class="formarea siderList">
+                <p>縣市</p>
+                <select name="addressCounty" id="addressCounty">
+                    
+                </select>
+                <p>地區</p>
+                <select name="addressTown" id="addressTown">
+                
+                </select>
+
+                <p>口罩類別</p>
+                <select name="mask" id="mask">
+                        <option value="" selected>請選擇</option>
+                        <option value="maskAll">成人與兒童</option>
+                        <option value="msakAdult">成人</option>
+                        <option value="maskchild">兒童</option>
+                </select>
+
+                <input type="button" value="搜尋" id="serchBtn">
+            </form>
+
+            <div id="addleftMenu" class="addleftMenu">
+
+            </div>
+        </div>
+        <div id="map" ></div>
+    </div>
+
+  
+    <!-- 載入leafletjs連結 -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <!-- markers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+    <script src="/js/city.js"></script>
+   
+</body>
+
+</html>

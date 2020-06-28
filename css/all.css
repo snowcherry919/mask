@@ -1,0 +1,399 @@
+ 
+                /* 主程式 */
+                
+                html,
+                body {
+                    width: 100vw;
+                    height: 100vh;
+                }
+                .wrap {
+                 
+                    margin: 0 auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                
+                .header {
+                    width: 100vw;
+                    background-color: #00B770;
+                    color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                @media screen and (max-width: 768px) {
+                    .header{
+                    display: none;
+                    }
+                }
+                
+                .date {
+                    margin-left: 20px;
+                    margin-top: 10px;
+                    flex: 300px;
+                    flex-grow: 0;
+                }
+                
+                .date p {
+                    font-size: 20px;
+                    padding: 5px 0;
+                }
+                
+                .date h1 {
+                    font-size: 26px;
+                    padding: 5px 0;
+                }
+                
+                .date .remind {
+                    font-size: 12px;
+                    padding: 5px 0;
+                    line-height: 1.5;
+                }
+                
+                .idarea {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 4;
+                }
+                
+                .idarea h2 {
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+                
+                .id [type=button] {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 24px;
+                    background-color: #4a4a4a;
+                    color: #fff;
+                    border: none;
+                    border-radius: 3px;
+                }
+                
+                .idBuy {
+                    color: rgb(0, 26, 255);
+                    font-size: 18px;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+                
+                .announcement {
+                    flex: 350px;
+                    flex-grow: 0;
+                    background: #00a866;
+                }
+                
+                .announcement p {
+                    font-size: 14px;
+                    padding: 0 15px;
+                    margin-top: 10px;
+                    line-height: 1.2;
+                }
+                
+                .announcement .connect {
+                    text-align: center;
+                    background: #0d784f;
+                    padding: 5px 0;
+                }
+                
+                .announcement a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 18px;
+                }
+                
+                .menu {
+                    background: #eee;
+                    flex: 1;
+                }
+                
+                .formarea {
+                    border-bottom: 1px solid #ccc;
+                    padding-top: 10px;
+                }
+                
+                .formarea p {
+                    color: #727272;
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    display: inline-block;
+                }
+                
+                .formarea select {
+                    width: 150px;
+                    height: 30px;
+                    background: #fafafa;
+                    font-size: 16px;
+                    border-radius:3px;
+                }
+                
+                #addressCounty,
+                #addressTown {
+                    margin-left: 36px;
+                    border-radius:3px;
+                }
+                
+                .formarea [type=button] {
+                    background: #00b770;
+                    width: 248px;
+                    height: 35px;
+                    color: #fff;
+                    font-size: 18px;
+                    margin: 10px 20px;
+                    border-radius: 5px;
+                    border:none;
+                }
+                /* 導入藥局資料 */
+                
+                .addleftMenu a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #727272;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    font-size: 18px;
+                }
+               
+                
+                .addleftMenu a:hover {
+                    color: #00b770;
+                }
+                
+                .addleftMenu p {
+                    padding: 3px 20px;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: #727272;
+                }
+                
+                .addleftMenu span {
+                    text-align: center;
+                    font-size: 14px;
+                }
+                
+                .addleftMenu {
+                    position: absolute;
+                    overflow-y: scroll;
+                    height: calc(100vh - 315px);
+                }
+
+                
+                .addleftMask {
+                    padding: 8px 20px;
+                    display: flex;
+                    font-size: 14px;
+                    color: #fff;
+                    border-bottom: 1px solid #ccc;
+                }
+                .title{
+                    width: 288px;
+                    position: relative;
+                }
+                .addleftMenu_adult {
+                    background-color: #00b770;
+                    width: 100px;
+                    padding: 10px;
+                    border-radius: 5px 0 0 5px;
+                }
+                
+                .addleftMenu_baby {
+                    width: 100px;
+                    background-color: #fa0;
+                    padding: 10px;
+                    border-radius: 0 5px 5px 0;
+                }
+
+                /* 選到成人時 */
+                
+                .onlyAdult {
+                    background-color: #00b770;
+                    width: 230px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+                /* 選到兒童時 */
+                
+                .onlyChild {
+                    background-color: #fa0;
+                    width: 230px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+                
+                .mapPopup{
+                    font-size: 16px;
+                    color:#727272;
+                }
+                .mapPopup h2{
+                    font-size: 18px;
+                    font-weight: bold;
+
+                }
+                .mapPopup p{
+                    margin: 6px 0;
+                    font-size: 16px;
+                    
+                   
+                }
+                /* icon */
+                .fa-phone-alt,.fa-clipboard{
+                    margin-right: 6px;
+                }
+                .fa-location-arrow{
+                    position: absolute;
+                    top:0;
+                    right:10px;
+                    color: #727272;
+
+                }
+                .fa-location-arrow.popup{
+                    text-decoration: none;
+                    color:#00b770;
+
+                }
+                
+                .popup_leftMask {
+                    padding: 8px 0px;
+                    display: flex;
+                    font-size: 14px;
+                    color: #fff;
+                }
+                .popup_adult {
+                    background-color: #00b770;
+                    width: 50%;
+                    padding: 10px;
+                    border-radius: 5px 0 0 5px;
+                    font-size: 16px;
+                }
+                
+                .popup_baby {
+                    width: 50%;
+                    background-color: #fa0;
+                    padding: 10px;
+                    border-radius: 0 5px 5px 0;
+                    font-size: 16px;
+                }
+
+                #map {
+                    height: calc(100vh - 135px);
+                    flex: 4;
+                }
+                /* group樣式處理 */
+                
+                .marker-cluster-small {
+                    background-color: rgba(181, 226, 140, 0.6);
+                }
+                
+                .marker-cluster-small div {
+                    background-color: rgba(110, 204, 57, 0.6);
+                }
+                
+                .marker-cluster-medium {
+                    background-color: rgba(241, 211, 87, 0.6);
+                }
+                
+                .marker-cluster-medium div {
+                    background-color: rgba(240, 194, 12, 0.6);
+                }
+                
+                .marker-cluster-large {
+                    background-color: rgba(253, 156, 115, 0.6);
+                }
+                
+                .marker-cluster-large div {
+                    background-color: rgba(241, 128, 23, 0.6);
+                }
+                
+                .marker-cluster {
+                    background-clip: padding-box;
+                    border-radius: 20px;
+                }
+                
+                .marker-cluster div {
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 5px;
+                    margin-top: 5px;
+                    text-align: center;
+                    border-radius: 15px;
+                    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+                }
+                
+                .marker-cluster span {
+                    line-height: 30px;
+                }
+                
+                .idBtn {
+                    width: 300px;
+                    height: 200px;
+                    background: #fff;
+                    border: 1px solid green;
+                    color: #000;
+                }
+                /* .leaflet-popup-pane{
+                    z-index:;
+                } */
+                .leaflet-popup-pane {
+                    
+                    top:-15px;
+                }
+
+
+                
+                @media screen and (max-width: 768px) {
+
+                  
+                    .menu{
+                        flex:none;
+                        width: 290px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        z-index: 999;
+                        transition: all .5s;
+                        transform: translateX(-100%);
+                        
+                    }
+                    .menu.active{
+                        transform: translateX(0);
+                    }
+                 
+                    .siderList{
+                        top:56px; 
+                        cursor: pointer;
+                        left:-100%;
+                        transition: .5s;
+                    }
+
+                    .addleftMenu{
+                      height: calc(100vh - 180px);
+                    }
+
+                    .c-sideButton {
+                        position: absolute;
+                        top: 180px;
+                        right: -17px;
+                        height: 49px;
+                        width: 17px;
+                        background: url(/NewMASK/image/arrow_left.png) no-repeat center center;
+                        background-color: #00a866;
+                        -webkit-box-shadow: 0 3px 6px #00000029;
+                        box-shadow: 0 3px 6px #00000029;
+                        border-radius: 0 5px 5px 0; 
+                    }
+                    #map{
+                        height: 100vh;
+                        z-index:0;
+                    }
+                }
+
+
+
+               
+               
