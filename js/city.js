@@ -99,7 +99,7 @@ function init(){
 }
 ;
 function getData() {
-    const url = '/js/city.json';
+    const url = '/city.json';
     let xhrCity = new XMLHttpRequest();
     xhrCity.open('get', url, true);
     xhrCity.send(null);
