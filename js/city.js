@@ -99,9 +99,9 @@ function init(){
 }
 ;
 function getData() {
-    
+    const url = '../city.json';
     let xhrCity = new XMLHttpRequest();
-    xhrCity.open('get','https://github.com/snowcherry919/mask/blob/master/js/city.json');
+    xhrCity.open('get', url, true);
     xhrCity.send();
     xhrCity.onload = function() {
 
@@ -203,7 +203,7 @@ const markers = new L.MarkerClusterGroup().addTo(map);
 let mapData;
 let addrData;
 function getMapData() {
-    const xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
     xhr.open('get', 'https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json?fbclid=IwAR3C_WUR1iWG73l4W6xjsCLD2tksnd-r_aO5j8YQfFh3HRDtxrAXVbKr9io');
     xhr.send();
     xhr.onload = function() {
