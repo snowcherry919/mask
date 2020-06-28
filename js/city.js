@@ -99,8 +99,7 @@ function init(){
 }
 ;
 function getData() {
-    const url = '../city.json';//相對路徑
-   
+    const url = '../../city.json';
     let xhrCity = new XMLHttpRequest();
     xhrCity.open('get', url, true);
     xhrCity.send();
