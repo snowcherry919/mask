@@ -99,7 +99,7 @@ function init(){
 }
 ;
 function getData() {
-    const url = 'city.json';
+    const url = 'https://github.com/snowcherry919/mask/blob/master/js/city.json';
     let xhrCity = new XMLHttpRequest();
     xhrCity.open('get', url, true);
     xhrCity.send(null);
