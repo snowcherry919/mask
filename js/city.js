@@ -99,7 +99,7 @@ function init(){
 }
 ;
 function getData() {
-    const url = '../city.json';
+    const url = 'mask/city.json';
     let xhrCity = new XMLHttpRequest();
     xhrCity.open('get', url, true);
     xhrCity.send();
@@ -302,10 +302,10 @@ function renderList(countyData,saveSelectRegion,saveAdult_Child){
         if(item.properties.county==countyData&&item.properties.town == saveSelectRegion && saveAdult_Child == 'maskAll'){
             adultData.push(item);
           
-        }else if (item.properties.county==countyData&&item.properties.town == saveSelectRegion && saveAdult_Child == 'msakAdult'){
+        }else if (item.properties.county==countyData&&item.properties.town == saveSelectRegion && saveAdult_Child == 'maskAdult'){
             adultData.push(item);
       
-        }else if (item.properties.county==countyData&&item.properties.town == saveSelectRegion && saveAdult_Child == 'maskchild'){
+        }else if (item.properties.county==countyData&&item.properties.town == saveSelectRegion && saveAdult_Child == 'maskChild'){
             childData.push(item);
       
         }
@@ -353,7 +353,7 @@ function renderList(countyData,saveSelectRegion,saveAdult_Child){
             });
             document.querySelector('.addleftMenu').innerHTML = leftMenu;
             break;
-        case 'msakAdult':
+        case 'maskAdult':
                 adultData.forEach(function(item,index){
                 leftMenu += `
                 <div class="title">
@@ -385,7 +385,7 @@ function renderList(countyData,saveSelectRegion,saveAdult_Child){
                 })
                 document.querySelector('.addleftMenu').innerHTML = leftMenu;
             break;
-        case 'maskchild':
+        case 'maskChild':
                 childData.forEach(function(item,index){
                 leftMenu += `
                 <div class="title">
