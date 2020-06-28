@@ -241,7 +241,7 @@ function showPopUp(){
 //口罩尺寸
 const maskAdultOrChild = document.getElementById('mask');  
 // 搜尋按鈕
-const serchBtn = document.getElementById('serchBtn');
+const searchBtn = document.getElementById('searchBtn');
 
 // 印出選到縣市的地區
 let saveSelectCounty;
@@ -288,7 +288,7 @@ elTown.addEventListener('change',saveRegion,false);
 //監聽口罩尺寸 
 maskAdultOrChild.addEventListener('change',saveMaskSize,false);
 // 監聽搜尋按鈕btn
-serchBtn.addEventListener('click', serchMaskArea,false);
+searchBtn.addEventListener('click', serchMaskArea,false);
 
 
  
