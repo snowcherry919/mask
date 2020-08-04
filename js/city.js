@@ -99,7 +99,7 @@ function init(){
 }
 ;
 function getData() {
-    const url = '/mask/city.json';
+    const url = '/city.json';
     let xhrCity = new XMLHttpRequest();
     xhrCity.open('get', url, true);
     xhrCity.send();
